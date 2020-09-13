@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    animation: sky-color 12s linear infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .ground {
+    transform: translateY(100%);
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    background-color: green;
+  }
+  
+  .sun {
+    border-radius: 50%;
+    background-color: darkorange;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform: translateX(-5vw) translateY(90vh);
+    animation: sun-motion 12s linear infinite;  
+  }
+  
+  @keyframes sun-motion {
+    0% {
+      transform: translateX(-5vw) translateY(90vh);
+    }
+    5% {
+      transform: translateY(80vh);
+    }
+    10% {
+      transform: translateX(5vw) translateY(60vh);
+      background-color: darkorange;
+    }
+    20% {
+      transform: translateX(15vw) translateY(40vh);
+    }
+    30% {
+      transform: translateX(25vw) translateY(30vh);
+    }
+    40% {
+      transform: translateX(35vw) translateY(25vh);
+      background-color: yellow;
+    }
+    50% {
+      transform: translateX(45vw) translateY(20vh);
+    }
+    60% {
+      transform: translateX(55vw) translateY(25vh);
+    }
+    70% {
+      transform: translateX(65vw) translateY(30vh);
+      background-color: yellow;
+    }
+    80% {
+      transform: translateX(75vw) translateY(40vh);
+    }
+    90% {
+      transform: translateX(85vw) translateY(60vh);
+    }
+    95% {
+      transform: translateX(95vw) translateY(80vh);
+    }
+    100% {
+      transform: translateX(105vw) translateY(100vh);
+      background-color: orangered;
+    }
+  }
+  
+  @keyframes sky-color {
+    0% {
+      background-color: black;
+    }
+    10% {
+      background-color: pink;
+    }
+    30% {
+      background-color: skyblue;
+    }
+    70% {
+      background-color: skyblue;
+    }
+    90% {
+      background-color: pink;
+    }
+    100% {
+      background-color: black;
+    }
+  }
